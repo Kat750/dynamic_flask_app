@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+</head>
+<body>
+    <h1>Registered Users</h1>
+
+    <ul>
+    {% for user in users %}
+        <li>{{ user[0] }} - {{ user[1] }}</li>
+    {% endfor %}
+    </ul>
+
+    <a href="/">Back to Main Page</a>
+</body>
+</html>
